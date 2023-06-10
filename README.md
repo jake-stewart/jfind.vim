@@ -21,11 +21,11 @@ git clone https://github.com/jake-stewart/jfind && cd jfind && cmake -S . -B bui
 Usage
 -----
 
-Put the following config in your vimrc:
+The following example uses [vim-plug](https://github.com/junegunn/vim-plug):
 
 ```vim
 let g:jfind_config = {
-    \ "tmux": v:false,
+    \ "tmux": v:true,
     \ "key": "<c-f>",
     \ "formatPaths": v:true,
     \ "exclude": [
@@ -46,6 +46,10 @@ let g:jfind_config = {
     \       "*.meta"
     \ ]
 \ }
+
+call plug#begin()
+Plug 'jake-stewart/jfind.vim'
+call plug#end()
 ```
 
 ### Config options
