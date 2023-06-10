@@ -20,10 +20,10 @@ Put the following config in your vimrc:
 
 ```vim
 let g:jfind_config = {
-    \ "tmux": v:false,       " try to open jfind in a tmux popup
-    \ "key": "<c-f>",        " keybinding for opening jfind window
-    \ "formatPaths" v:true,  " format paths for easier searching
-    \ "exclude": [           " exclude list. supports wildcards
+    \ "tmux": v:false,
+    \ "key": "<c-f>",
+    \ "formatPaths": v:true,
+    \ "exclude": [
     \       ".git",
     \       ".idea",
     \       ".vscode",
@@ -42,3 +42,9 @@ let g:jfind_config = {
     \ ]
 \ }
 ```
+
+### Config options
+- tmux: a boolean of whether jfind should be launched in a tmux window.
+- key: a string of the key which will open jfind.
+- formatPaths: a boolean of whether paths should be searched through only their file and first parent.
+- exclude: a list of strings of which files/directories should be ignored. Wildcards are supported.
