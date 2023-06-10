@@ -7,7 +7,7 @@ If you use neovim, then use the [jfind.nvim](https://github.com/jake-stewart/jfi
 
 If you don't use neovim, probably use [fzf.vim](https://github.com/junegunn/fzf.vim).
 
-I will not be adding new features to this plugin. I will only fix bugs.
+I will not be adding new features to this plugin since I do not use regular vim. I will only fix bugs.
 
 ### Dependencies
  - [jfind](https://github.com/jake-stewart/jfind) (Required)
